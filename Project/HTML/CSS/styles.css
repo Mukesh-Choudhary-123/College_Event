@@ -1,0 +1,382 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.main_content {
+  background-color: brown;
+}
+.nav_bar {
+  height: 50px;
+  display: flex;
+  background: rgb(147, 0, 25);
+  padding-bottom: 4px;
+}
+.nav_bar ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 18px;
+}
+.nav_bar ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-size: medium;
+  font-weight: 600;
+}
+.nav_bar ul li a:hover {
+  color: gold;
+}
+#college_icon {
+  margin-left: 10px;
+  margin-top: 3px;
+  height: 45px;
+  width: 45px;
+}
+.sliding_image {
+  height: 500px;
+  background-color: rgb(160, 0, 0);
+}
+.sliding_image h2 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 9rem;
+  margin-left: 14%;
+  margin-top: 150px;
+  z-index: 2;
+}
+.sliding_image img {
+  opacity: 0.7;
+  width: 100%;
+  height: 500px;
+}
+#head {
+  display: flex;
+  margin-bottom: 64px;
+  height: 40px;
+  width: 100%;
+  margin-left: 30px;
+  font-size: 1.8rem;
+  justify-content: space-around;
+}
+.content_box {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 0 0 12px 12px;
+}
+#h3Gallery {
+  display: none;
+}
+.content_gallery {
+  width: 49%;
+  height: 660px;
+}
+.all_card {
+  display: flex;
+}
+.event_cards {
+  margin: 20px;
+  height: 300px;
+  width: 280px;
+  border-radius: 14px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.799);
+}
+.event_cards img {
+  height: 60%;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.des h4,
+p {
+  text-align: center;
+}
+.des h4 {
+  padding: 2px;
+  font-size: 1.4rem;
+  margin-left: 5px;
+  margin-top: 11px;
+  margin-bottom: 13px;
+  background-color: rgba(147, 0, 24, 0.423);
+  border-radius: 16px;
+  width: 260px;
+  box-shadow: 2px 2px 6px rgb(177, 24, 24);
+}
+#h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.event_cards:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 13px brown;
+}
+.gallery_box {
+  width: 100%;
+  height: 655px;
+  border: 1px solid brown;
+  box-shadow: 2px 6px 13px brown;
+  border-radius: 12px 0 12px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.448),
+    rgba(143, 138, 0, 0.448)
+  );
+}
+.gallery_img img {
+  margin-left: 20px;
+  margin-top: 7px;
+  width: auto;
+  height: 150px;
+  border-radius: 4px;
+}
+.gallery_img img:hover {
+  height: 153px;
+  box-shadow: 0px 4px 13px brown;
+}
+#img7 {
+  width: 300px;
+  margin-left: 40px;
+}
+#img8 {
+  width: 300px;
+}
+.footer {
+  width: 100%;
+  height: 20px;
+  background-color: brown;
+}
+.footer p {
+  color: bisque;
+  padding: 2px;
+  font-size: small;
+  margin-top: 0px;
+}
+
+/*    MEDIA QURERIES    */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav_bar ul {
+    margin-left: -30px;
+  }
+  .sliding_image h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+  .sliding_image {
+    height: 150px;
+  }
+  .sliding_image img {
+    height: 150px;
+  }
+  .all_card {
+    margin-left: 15px;
+    display: block;
+  }
+  #h3all_events {
+    font-size: 1.7rem;
+  }
+  #h3gallery {
+    display: none;
+  }
+  #h4 {
+    width: 232px;
+  }
+  #p {
+    font-size: 0.8rem;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    margin: 10px;
+    width: 250px;
+  }
+  .gallery_box {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+  .sliding_image {
+    height: 300px;
+  }
+  .sliding_image h2 {
+    font-size: 3rem;
+  }
+  .sliding_image img {
+    height: 300px;
+  }
+  #h3all_events {
+    font-size: 2rem;
+    margin-left: -70px;
+  }
+  #first_two_cards {
+    display: block;
+    margin-left: 50px;
+  }
+  .all_card {
+    display: block;
+  }
+  .second_two_cards {
+    margin-left: 50px;
+    display: block;
+  }
+  #h3gallery {
+    display: none;
+  }
+  #h3Gallery {
+    display: block;
+    font-size: 2rem;
+    width: 470px;
+    text-align: center;
+  }
+  .gallery_box {
+    height: 530px;
+    margin-left: 20px;
+    width: 420px;
+    display: flex;
+  }
+  .gallery_img img {
+    height: 160px;
+    width: 170px;
+  }
+  #img7 {
+    display: none;
+  }
+  #img8 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .sliding_image {
+    height: 300px;
+  }
+  .sliding_image h2 {
+    font-size: 3rem;
+    margin-top: 134px;
+    margin-left: 26%;
+  }
+  .sliding_image img {
+    height: 300px;
+  }
+  #h3all_events {
+    font-size: 2rem;
+  }
+  #h3gallery {
+    display: none;
+  }
+  #first_two_cards {
+    display: block;
+    margin-left: 150px;
+  }
+  .all_card {
+    display: block;
+  }
+  .second_two_cards {
+    margin-left: 150px;
+    display: block;
+  }
+  #h3Gallery {
+    display: block;
+    width: 610px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .gallery_box {
+    height: auto;
+    width: 536px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .gallery_img img {
+    height: 170px;
+    width: 170px;
+  }
+  #img7 {
+    display: none;
+  }
+  #img8 {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sliding_image h2 {
+    font-size: 5rem;
+    margin-top: 25%;
+  }
+  #h3Gallery {
+    width: 720px;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #h3gallery {
+    display: none;
+  }
+  .all_card {
+    margin-left: 60px;
+  }
+  .gallery_box {
+    margin-left: 55px;
+    width: 670px;
+    height: 520px;
+  }
+  #img7,
+  #img8 {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1310px) {
+  .sliding_image h2 {
+    font-size: 7rem;
+  }
+  .all_card {
+    display: flex;
+  }
+  #h3gallery {
+    display: none;
+  }
+  #h3Gallery {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    width: 1100px;
+  }
+  #first_two_cards {
+    margin-left: 100px;
+  }
+  .second_two_cards {
+    margin-left: 100px;
+  }
+  .gallery_box {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 960px;
+    height: 500px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    margin: 10px;
+    height: 350px;
+    width: 350px;
+  }
+  #h4 {
+    width: 325px;
+  }
+  #p {
+    font-size: 1rem;
+  }
+}
